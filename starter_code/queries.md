@@ -46,7 +46,7 @@ db.companies.find( {"number_of_employees": {$exists: true}}, {"name": 1, "number
 
 ## 11. All the companies founded on the second semester of the year. Limit your search to 1000 companies.
 
-db.companies.find( { "founded_month": {$gte: 6 }}, {"name": 1, "founded_month": 1, "_id": 0} ).limit(1000
+db.companies.find( { "founded_month": {$gte: 6 }}, {"name": 1, "founded_month": 1, "_id": 0} ).limit(1000)
 
 ### 12. All the companies that have been 'deadpooled' after the third year. 
 
